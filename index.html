@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="no-js ie ie7" lang="en"> 
+   <html class="no-js ie ie8" lang="en"> 
+<html class="no-js" lang="en"> 
+<head>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Resume :SWETHA SK </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+
+    <!-- Script
+    ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+	<!---  AWS LEX ---------------------------------->
+   <script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
+   <style language="text/css">
+	#infobot{
+		position: fixed;
+		right: 0px;
+		bottom: 0px;
+		z-index: 100;
+	}
+	#conversation{
+		width: 300px;
+		height: 350px;
+		border: 1px solid #ccc;
+		background-color: #0c021f;
+		padding: 4px;
+		overflow: scroll;
+		overflow-x: hidden;
+		scrollbar-width: 4px;
+	}
+	input#wisdom {
+		background-color:#0c0f12;
+		color: #fff;
+		padding: 4px;
+		font-size: 1em;
+		width: 300px;
+		text-style: italic;
+	}
+    input::placeholder {
+        color: #b4b3b4;
+        font-style: italic;
+    }
+
+    p.userRequest {
+        margin: 4px;
+        padding: 4px 10px 4px 10px;
+        border-radius: 4px;
+        min-width: 50%;
+        max-width: 85%;
+        float: left;
+        background-color: #7d7;
+    }
+
+    p.lexResponse {
+        margin: 4px;
+        padding: 4px 10px 4px 10px;
+        border-radius: 4px;
+        text-align: right;
+        min-width: 50%;
+        max-width: 85%;
+        float: right;
+        background-color: #bbf;
+        font-style: italic;
+    }
+
+    p.lexError {
+        margin: 4px;
+        padding: 4px 10px 4px 10px;
+        border-radius: 4px;
+        text-align: right;
+        min-width: 50%;
+        max-width: 85%;
+        float: right;
+        background-color: #f77;
+    }
+	@media only screen and (max-width: 900px){
+		#conversation{
+			width: 250px;
+			height: 300px;
+			border: 1px solid #ccc;
+			background-color: #0c021f;
+			padding: 4px;
+			overflow: scroll;
+			overflow-x: hidden;
+			scrollbar-width: 4px;
+		}
+		input#wisdom {
+			background-color:#0c0f12;
+			color: #fff;
+			padding: 4px;
+			font-size: 1em;
+			width: 250px;
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		#conversation{
+			width: 200px;
+			height: 250px;
+			border: 1px solid #ccc;
+			background-color: #0c021f;
+			padding: 4px;
+			overflow: scroll;
+			overflow-x: hidden;
+			scrollbar-width: 4px;
+		}
+		input#wisdom {
+			background-color:#0c0f12;
+			color: #fff;
+			padding: 4px;
+			font-size: 1em;
+			width: 200px;
+			text-style: italic;
+		}
+	}
+	@media only screen and (max-width: 480px){
+		#infobot{
+			display: none;
+		}
+	}
+	</style>
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+			
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline" style = "font-family: Agency fb;">I'm SWETHA SK.</h1>
+            <h3>I am a Computer Science Student at the Velammal Engineering college. I love building new things - starting from a blank whiteboard or early-stage prototype and transforming it into something people truly value. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more 
+            <hr />
+            <ul class="social">
+               <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/swetha-kumaresan-9646a7222/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			   	
+               <li><a href="https://github.com/Darkitch" target="_blank"><i class="fa fa-github"></i></a></li>
+               
+            </ul>
+         </div>
+      </div>
+		
+      
+	
+	
+	<!--------------------------------------------------------->
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpeg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I'm an undergraduate Computer Science major at Velammal Engineering college with extensive hands-on experience Needed in Android App development, Web Development and Software Development with advanced knowledge of modern development tools. Seeking a dynamic new role as a App Developer/Sofware Developer with a view of contributing towards the advancement of the company.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>SWETHA SK</span><br>
+						   <span>chennai, India<br>
+                     </span><br>
+						   <span>+91 - 9444230826</span><br>
+                     <span>skswetha14@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="mailto:skswetha14@gmail.com" class="button stroke"><i class="fa fa-briefcase"></i>Hire Me</a>
+                  </p>
+               </div>
+
+                <div class="columns download">
+                    <p>
+                        <a href="https://drive.google.com/file/d/1c6i6RaLx1IbV0liJQwUoG4VB5hqAIF-n/view" class="button" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
+                    </p>
+                </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Velammal Engineering college</h3>
+                  <p class="info">B.E in Computer Engineering <span>&bull;</span> <em class="date">2020 - present</em></p>
+
+                  <p>CGPA - 9.13 <i>(Upto 3th Semester)</i> </p>
+
+               </div>
+
+            </div> <!-- item end -->
+		
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Velammal Vidhyashram School</h3>
+                  <p class="info">C.B.S.E. Class XII <span>&bull;</span> <em class="date">2013 - 2019</em></p>
+
+                  <p>Percentage : 79.3%</p>
+
+               </div>
+			
+            </div> 
+			
+			 
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+
+
+      
+
+
+<!--------------------------------------------------------------------------->
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+
+
+				<div class="bars">
+
+				   <ul class="skills">
+				      <li><span class="bar-expand css"></span><em>C/C++/Python/Java</em></li>
+                  <li><span class="bar-expand photoshop"></span><em>Web Development</em></li>
+						<li><span class="bar-expand html5"></span><em>Firebase/Mysql/Sqlite3</em></li>
+                  <li><span class="bar-expand css"></span><em> Android Development</em></li>
+					
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+<!----------------------------------------------------------------------------->
+<!-------- Certification ------------------------------------------------------>	  
+
+
+             
+               
+
+
+         
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">Please feel free to leave a message at the given contact details. I'd love to hear it from you!
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="ten columns">
+
+                  <div>
+                      <h4>Address and Phone</h4>
+                      <p class="address">
+                          SWETHA SK<br>
+                          Velammal<br>Engineering college
+                          chennai, India <br><br>
+                          <span>+91-9444230826</span><br>
+                          <span>skswetha14@gmail.com</span>
+                      </p>
+                  </div>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+				<li><a href="https://www.facebook.com/profile.php?id=100029288597566" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/satyam-soni-332522172/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			   	<li><a href="https://www.youtube.com/channel/UC7bYDBd9XNo9MNQPC25pwMg?view_as=subscribe" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                <li><a href="https://github.com/SatyamSoni23" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.codechef.com/users/satyam_soni" target="_blank"><i class="fa fa-code"></i></a></li>			   
+            <ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>
